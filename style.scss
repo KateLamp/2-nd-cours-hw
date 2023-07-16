@@ -32,6 +32,7 @@ body {
     }
 
     &__text {
+        max-width: 481px;
         color: #FFF;
         font-family: Montserrat;
         font-size: 18px;
@@ -59,6 +60,11 @@ body {
     background: #9C0332;
     width: 234.063px;
     height: 48.603px;
+    transition: all 0.2s;
+
+    &:hover {
+        background: #EB443F;
+    }
 }
 
 .group {
@@ -101,5 +107,13 @@ body {
             width: 379px;
             height: 300px;
         }
+
+        &:hover {
+            border-radius: 19px;
+            outline: 3px solid #44D2FF;
+            box-sizing: border-box;
+        }
     }
 }
+
+@import "mobile";

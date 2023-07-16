@@ -31,6 +31,7 @@ body {
   padding-bottom: 32px;
 }
 .main__text {
+  max-width: 481px;
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -56,6 +57,10 @@ body {
   background: #9C0332;
   width: 234.063px;
   height: 48.603px;
+  transition: all 0.2s;
+}
+.button:hover {
+  background: #EB443F;
 }
 
 .group {
@@ -95,4 +100,42 @@ body {
   background-image: url(img/group3.jpg);
   width: 379px;
   height: 300px;
+}
+.group__style:hover {
+  border-radius: 19px;
+  outline: 3px solid #44D2FF;
+  box-sizing: border-box;
+}
+
+@media (max-width: 376px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 238px;
+    padding-bottom: 238px;
+  }
+  .main__heading {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
