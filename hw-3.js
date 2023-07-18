@@ -60,8 +60,10 @@ switch (monthNumber) {
 
 //Задача 7
 let g = prompt('Пожалуйста, введите любое число');
-isNaN(g);
-if (g % 2 == 0) {
+
+if (isNaN(g)) {
+    alert ('Не является числом');
+} else if (g % 2 == 0) {
     alert('Число четное');
 } else {
     alert('Число нечетное');
@@ -82,15 +84,36 @@ if (clientOS == 0) {
 //Задача 9
 let clientOS1 = prompt('Какой операционной системой Вы пользуетесь? Введите 0, если iOS; введите 1, если Android');
 let clientDeviceYear1 = prompt('В каком году произведен Ваш телефон?')
-clientDeviceYear1 = 2015;
-if (clientOS1 == 0 && clientDeviceYear1 >= 2015) {
-    alert('Установите версию приложения для iOS по ссылке');
-}   else if (clientOS1 == 0 && clientDeviceYear1 < 2015) {
-    alert('Установите облегченную версию приложения для iOS по ссылке');
-}   else if (clientOS1 == 1 && clientDeviceYear1 >= 2015) {
-    alert('Установите версию приложения для Android по ссылке');
-}   else if (clientOS1 == 1 && clientDeviceYear1 < 2015) {
-    alert('Установите облегченную версию приложения для Android по ссылке');
-}   else {
+if (clientOS1 == 0) {
+    if (clientDeviceYear1 >= 2015) {
+        alert('Установите версию приложения для iOS по ссылке');
+    } else {
+        alert('Установите облегченную версию приложения для iOS по ссылке');
+    }
+} else {
+    if (clientDeviceYear1 >= 2015) {
+        alert('Установите версию приложения для Android по ссылке');
+    } else {
+        alert('Установите облегченную версию приложения для Android по ссылке');
+    }
+};
+
+//или
+
+let clientOS2 = prompt('Какой операционной системой Вы пользуетесь? Введите 0, если iOS; введите 1, если Android');
+let clientDeviceYear2 = prompt('В каком году произведен Ваш телефон?')
+if (clientOS2 == 0) {
+    if (clientDeviceYear2 >= 2015) {
+        alert('Установите версию приложения для iOS по ссылке');
+    } else {
+        alert('Установите облегченную версию приложения для iOS по ссылке');
+    }
+} else if (clientOS2 == 1) {
+    if (clientDeviceYear2 >= 2015) {
+        alert('Установите версию приложения для Android по ссылке');
+    } else {
+        alert('Установите облегченную версию приложения для Android по ссылке');
+    }
+} else {
     alert('Что-то пошло не так');
-}
+};
