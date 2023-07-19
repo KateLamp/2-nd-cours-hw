@@ -9,8 +9,8 @@ body {
 }
 
 .center {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .main {
