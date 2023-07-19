@@ -1,0 +1,35 @@
+@media (max-width: 376px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 238px;
+         padding-bottom: 238px;
+
+        &__heading {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &__text {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            padding-bottom: 32px;
+        }
+    }
+}
