@@ -13,6 +13,24 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+.heading {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
 .main {
   background-image: url(img/Rectangle\ 1.jpg);
   background-repeat: no-repeat;
@@ -22,22 +40,12 @@ body {
   padding-bottom: 494px;
 }
 .main__heading {
-  color: #FFF;
-  font-family: Montserrat;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding-bottom: 32px;
 }
 .main__text {
   max-width: 481px;
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 32px;
   padding-bottom: 44px;
 }
 .main__text_style {
@@ -107,19 +115,28 @@ body {
   box-sizing: border-box;
 }
 
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 234px;
+  padding-bottom: 234px;
+}
+.game__1_heading {
+  padding-bottom: 32px;
+}
+.game__1_text {
+  max-width: 592px;
+  padding-bottom: 32px;
+}
+
 @media (max-width: 376px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 238px;
-    padding-bottom: 238px;
-  }
-  .main__heading {
+  .heading {
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
@@ -128,7 +145,7 @@ body {
     font-weight: 700;
     line-height: normal;
   }
-  .main__text {
+  .text {
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
@@ -137,5 +154,28 @@ body {
     font-weight: 300;
     line-height: 22px;
     padding-bottom: 32px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 238px;
+    padding-bottom: 238px;
+  }
+  .main__text {
+    padding-bottom: 32px;
+  }
+  .game {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .game__1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgGame {
+    padding-top: 64px;
   }
 }/*# sourceMappingURL=style.css.map */
