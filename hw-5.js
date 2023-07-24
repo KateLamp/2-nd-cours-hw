@@ -39,6 +39,7 @@ let square1 = function () {
 square1();
 
 //Задание 4
+/*
 let age = prompt('Сколько Вам лет?');
 
 if (age < 0) {
@@ -56,36 +57,44 @@ if (age < 0) {
 }
 
 printMessage();
+*/
+
+function printMessage() {
+    let age = prompt('Сколько Вам лет?');
+    if (age < 0) {
+        console.log('Вы ввели неправильное значение');
+    } else if (age <= 12) {
+        console.log('Привет, друг!');
+    } else {
+        console.log('Добро пожаловать!');
+    }
+}
+
+printMessage();
 
 //Задание 5
-let d = prompt('Введите первое число');
-let e = prompt('Введите второе число');
-if (isNaN(d, e)) {
-    function printMessage() {
-        console.log('Одно или оба значения не являются числом');
-    }
-} else {
-    function printMessage() {
-        console.log(d * e);
+function mult() {
+    let d = prompt('Введите первое число');
+    let e = prompt('Введите второе число');
+    if (isNaN(d) || isNaN(e)) {
+        return ('Одно или оба значения не являются числом');
+    } else {
+        return (d * e);
     }
 }
 
-printMessage();
+console.log(mult());
 
 //Задание 6
-let f = prompt('Введите любое число');
-if (isNaN(f)) {
-    function printMessage() {
-        console.log('Переданный параметр не является числом');
-    }
-} else {
-    function printMessage() {
-        let message = f ** 3;
-        console.log(message);
+let printMessage = (f = prompt('Введите любое число')) => {
+    if (isNaN(f)) {
+        return 'Переданный параметр не является числом';
+    } else {
+        return f ** 3;
     }
 }
 
-printMessage();
+ console.log(printMessage());
 
 //Задание 7
 function getCircleArea() {
