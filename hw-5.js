@@ -73,9 +73,7 @@ function printMessage() {
 printMessage();
 
 //Задание 5
-function mult() {
-    let d = prompt('Введите первое число');
-    let e = prompt('Введите второе число');
+function mult(d, e) {
     if (isNaN(d) || isNaN(e)) {
         return ('Одно или оба значения не являются числом');
     } else {
@@ -83,10 +81,10 @@ function mult() {
     }
 }
 
-console.log(mult());
+console.log(mult(5, 7));
 
 //Задание 6
-let printMessage = (f = prompt('Введите любое число')) => {
+function printMessage(f) {
     if (isNaN(f)) {
         return 'Переданный параметр не является числом';
     } else {
@@ -94,7 +92,9 @@ let printMessage = (f = prompt('Введите любое число')) => {
     }
 }
 
- console.log(printMessage());
+let f = prompt('Введите любое число');
+
+console.log(printMessage(f));
 
 //Задание 7
 function getCircleArea() {
