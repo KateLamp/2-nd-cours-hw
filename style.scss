@@ -13,6 +13,24 @@ body {
     padding-right: calc(50% - 600px);
 }
 
+.heading {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
 .main {
     background-image: url(img/Rectangle\ 1.jpg);
     background-repeat: no-repeat;
@@ -22,23 +40,13 @@ body {
     padding-bottom: 494px;
 
     &__heading {
-        color: #FFF;
-        font-family: Montserrat;
         font-size: 64px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         padding-bottom: 32px;
     }
 
     &__text {
         max-width: 481px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 32px;
         padding-bottom: 44px;
 
         &_style {
@@ -112,6 +120,26 @@ body {
             border-radius: 19px;
             outline: 3px solid #44D2FF;
             box-sizing: border-box;
+        }
+    }
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 234px;
+    padding-bottom: 234px;
+
+    &__1 {
+        &_heading {
+            padding-bottom: 32px;
+        }
+
+        &_text {
+            max-width: 592px;
+            padding-bottom: 32px;
         }
     }
 }
