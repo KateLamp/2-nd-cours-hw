@@ -1,8 +1,8 @@
 //Задание 1
 const arr = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == 0) break;
     console.log(arr[i]);
+    if (arr[i] === 10) break;
 }
 
 //Задание 2
@@ -11,14 +11,18 @@ console.log(num.indexOf(4));
 
 //Задание 3
 const numJoin = [1, 3, 5, 10, 20];
-console.log(numJoin.join([' ']));
+console.log(numJoin.join(' '));
 
 //Задание 4
-let newArr = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
+let newArr = [];
+for (let i = 0; i < 3; i++) {
+    newArr[i] = [];
+    for (let k = 0; k < 3; k++) {
+        newArr[i][k] = 1;
+    }
+}
+
+console.log(newArr);
 
 //Задание 5
 const numPush = [1, 1, 1];
@@ -61,17 +65,21 @@ for (let i = 0; i < arrRandom.length - 1; i++) {
 }
 
 //Задание 11
+/*
 const arr2 = [4, 6, 2, 9, 1, 7, 5];
 let arrSquare = arr2.map(item => item**2);
 console.log(arrSquare);
+*/
+
+function arrSquare(arr2) {
+    return arr2.map(item => item ** 2);
+}
+
+console.log(arrSquare([4, 6, 2, 9, 1, 7, 5]));
 
 //Задание 12
 function getLengthWords(word) {
-    let wordSplit = word.split('');
-    for (let i = 0; i < wordSplit.length; i++) {
-        return wordSplit[i].length;
-    }
-  
+    return word.map(item => item.length);
 }
 
 console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
