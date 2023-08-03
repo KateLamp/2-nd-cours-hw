@@ -130,8 +130,15 @@ body {
   max-width: 592px;
   padding-bottom: 32px;
 }
+.game__2_heading {
+  padding-bottom: 32px;
+}
+.game__2_text {
+  max-width: 592px;
+  padding-bottom: 32px;
+}
 
-@media (max-width: 376px) {
+@media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -175,7 +182,21 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .game__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gameWord {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+  }
   .imgGame {
     padding-top: 64px;
+  }
+  .imgGame2 {
+    max-width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */
