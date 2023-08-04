@@ -16,6 +16,21 @@ console.log(people.sort(function (a, b) {
     };
 }));
 
+/*Вариант 2
+const getSortedArrayObj = (arr) => {
+    return arr.sort( (a, b) => a.age - b.age);
+};
+  
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+  
+console.log(getSortedArrayObj(people))
+*/
+
 //Задание 2
 function isPositive(num) {
     return num >= 0;
@@ -27,7 +42,7 @@ function filter(arr, ruleFunction) {
     const output = [];
 
     for (let i = 0; i < arr.length; i++) {
-        output.push(ruleFunction(arr[i]));
+        if (ruleFunction(arr[i])) output.push(arr[i]);
     }
     return output;
 }
@@ -50,7 +65,6 @@ setTimeout(() => {clearInterval(timerId); console.log('30 секунд прош�
 //Задание 4
 function delayForSecond(callback) {
     setTimeout(callback, 1000);
-    callback();
 }
 
 delayForSecond(function() {
